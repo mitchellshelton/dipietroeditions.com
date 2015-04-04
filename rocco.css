@@ -1,0 +1,75 @@
+a:link {
+	text-decoration: underline;
+	color: #000000;
+}
+a:visited {
+	text-decoration: underline;
+	color: #000000;
+}
+a:hover {
+	text-decoration: underline overline;
+	color: #FF0000;
+}
+a:active {
+	color: #333333;
+	text-decoration: underline overline;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~ Social Networking ~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ */
+#social-networking {
+  width: 100%;
+  margin: 0px auto;
+  text-align: center;
+}
+#social-networking-list {
+  margin: 0px;
+  padding: 0px;
+}
+.social-networking-item {
+  display: inline-block;
+  list-style-type: none;
+}
+.social-networking-link:link,
+.social-networking-link:visited {
+  text-decoration: none;
+  color: #000;
+  border: 1px solid #fff;
+}
+.social-networking-link:hover,
+.social-networking-link:active {
+  border: 1px solid #000;
+}
+.social-networking-link {
+  height: 64px;
+  width: 64px;
+  display: block;
+}
+#youtube-link {
+  background: #000 url('../images/social-media-icons.png') no-repeat 0px -64px;
+}
+#vimeo-link {
+  background: #000 url('../images/social-media-icons.png') no-repeat -128px -256px;
+}
+#soundcloud-link {
+  background: #000 url('../images/social-media-icons.png') no-repeat -320px -128px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~ The following is borrowed from Drupal 7 system.base.css. It is used to hide elements ~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ */
+.element-hidden {
+  display: none;
+}
+.element-invisible {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  left: 0px;
+}
+.element-invisible.element-focusable:active,
+.element-invisible.element-focusable:focus {
+  position: static !important;
+  clip: auto;
+}
